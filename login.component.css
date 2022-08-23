@@ -1,0 +1,260 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.background {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+h1 {
+    align-items: center;
+    margin-left: 150px;
+    margin-top: 30px;
+    color: rgba(92, 1, 1, 0.788);
+    text-shadow: 3px 3px rgb(226, 200, 200);
+}
+.form {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    margin: 6% auto;
+    background-color: white;
+    padding: 5px;
+    border-radius: 15px;
+}
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.input input {
+    width: 245px;
+    height: 20px;
+    border-radius: 0px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+img {
+    width: 30px;
+    height: 30px;
+    padding: 10px 5px 0px 5px;
+}
+.password {
+    margin-top: 10px;
+    margin-left: 60px;
+}
+.password a:hover {
+    text-decoration: none;
+    color: blue;
+    font-size: 15px;
+    cursor: pointer;
+}
+.checkbox {
+    margin-top: 10px;
+    margin-left: 60px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.checkbox button {
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(226, 200, 200);
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+.checkbox button:hover {
+    background-color: green;
+    color: white;
+}
+.form-checkinput {
+    margin-top: 8px;
+    margin-left: 60px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.login-toggle {
+    margin-top: 15px;
+    margin-left: 10px;
+    width: 140px;
+    height: 30px;
+    border-radius: 15px;
+    padding-top: 5px;
+}
+.login-toggle:hover {
+    background-color: rgb(54, 148, 54);
+    color: white;
+}
+@media only screen and (max-width:1280px) {
+    h1 {
+        align-items: center;
+        margin-left: 250px;
+        margin-top: 30px;
+        font-size: 40px;
+    }
+    .form {
+        width: 600px;
+        height: 500px;
+        position: relative;
+        margin: 6% auto;
+        background-color: white;
+        padding: 5px;
+        border-radius: 15px;
+        margin-top: 130px;
+    }
+    .input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 90px;
+    }
+    .input input {
+        width: 400px;
+        height: 40px;
+        border-radius: 0px;
+        border: none;
+        outline: none;
+        border-bottom: 2px solid black;
+        font-size: 20px;
+    }
+    img {
+        width: 30px;
+        height: 30px;
+    }
+    .password {
+        margin-top: 15px;
+        margin-left: 80px;
+    }
+    .password a {
+        text-decoration: none;
+        color: blue;
+        font-size: 15px;
+    }
+    .checkbox {
+        margin-top: 10px;
+        margin-left: 80px;
+        font-size: 15px;
+    }
+    .checkbox button {
+        margin-top: 20px;
+        margin-left: 80px;
+        width: 200px;
+        height: 40px;
+        border-radius: 5px;
+        background-color: grey;
+    }
+    .checkbox button:hover {
+        background-color: green;
+    }
+    .form-checkinput {
+        margin-top: 8px;
+        margin-left: 80px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .login-toggle {
+        margin-top: 15px;
+        margin-left: 10px;
+        width: 140px;
+        height: 30px;
+        border-radius: 15px;
+        padding-top: 5px;
+    }
+    .login-toggle:hover {
+        background-color: rgb(54, 148, 54);
+        color: white;
+    }
+}
+@media only screen and (max-width:450px) {
+    h1 {
+        align-items: center;
+        margin-left: 100px;
+        margin-top: 30px;
+    }
+    .form {
+        width: 310px;
+        height: 500px;
+        position: relative;
+        margin: 6% auto;
+        background-color: white;
+        padding: 5px;
+        border-radius: 15px;
+        margin-top: 130px;
+    }
+    .input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 90px;
+    }
+    .input input {
+        width: 245px;
+        height: 20px;
+        border-radius: 0px;
+        border: none;
+        outline: none;
+        border-bottom: 2px solid black;
+        font-size: 15px;
+    }
+    img {
+        width: 30px;
+        height: 30px;
+    }
+    .password {
+        margin-top: 15px;
+        margin-left: 20px;
+    }
+    .password a {
+        text-decoration: none;
+        color: blue;
+        font-size: 15px;
+    }
+    .checkbox {
+        margin-top: 10px;
+        margin-left: 20px;
+        font-size: 12px;
+    }
+    .checkbox button {
+        margin-top: 20px;
+        margin-left: 20px;
+        width: 120px;
+        height: 25px;
+        border-radius: 5px;
+        background-color: grey;
+    }
+    .checkbox button:hover {
+        background-color: green;
+    }
+    .form-checkinput {
+        margin-top: 8px;
+        margin-left: 20px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .login-toggle {
+        margin-top: 15px;
+        margin-left: 10px;
+        width: 140px;
+        height: 30px;
+        border-radius: 15px;
+        padding-top: 5px;
+    }
+    .login-toggle:hover {
+        background-color: rgb(54, 148, 54);
+        color: white;
+    }
+}
+.text-error {
+    color: red;
+}

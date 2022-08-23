@@ -1,0 +1,52 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</head>
+<div class="background">
+    <div class="form ">
+        <h1>Login</h1>
+        <hr>
+        <form [formGroup]="loginForm">
+          
+            <div class="input">
+                <div><input type="text" #Username placeholder="UserName" formControlName="username"><img
+                        src="https://t3.ftcdn.net/jpg/05/14/18/46/360_F_514184651_W5rVCabKKRH6H3mVb62jYWfuXio8c8si.jpg"
+                        alt="">
+                    <div *ngIf="f.username.touched && f.username.invalid">
+                        <div class="text-error" *ngIf="f.username.errors.required">Username is Required</div>
+                        <div class="text-error" *ngIf="f.username.errors.email">Username is invalid
+                        </div>
+                    </div>
+                </div>
+                <div><input [type]="inputType" #Password placeholder="password" formControlName="password">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsGJrcCZqPdoOOlzPoW8Qh1Pf6NRL1ykKElg&usqp=CAU"
+                        alt="">
+                    <div *ngIf="f.password.touched && f.password.invalid">
+                        <div class="text-error" *ngIf="f.password.errors.required">Password is Required</div>
+                        
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="form-checkinput"><input (change)="showpassword($event)" type="checkbox"> Show Password</div>
+        <div class="password"><a (click)="password()">Forget password?</a></div>
+        <div class="checkbox"><input type="checkbox"> Remember me
+            <button (click)="login(Username.value,Password.value)">Login</button>
+        </div>
+        <p>{{error}}</p>
+    </div>
+</div>
